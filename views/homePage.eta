@@ -1,23 +1,30 @@
-<% layout("./layouts/layout.eta") %>
-<% /* <%~ includeFile("./partials/menu.eta") %> */ %>
-<a href= "/lists">lists</a>
-<% /* <h1><%= it.heading %></h1> */ %>
-<h1>Shared shopping lists</h1>
-<h3>Statistics</h3>
-
-
-
-    <% if (it.shoppingLists > 0) { %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shared shopping lists</title>
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.1/dist/paper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container paper">
+        <a href="/lists">Lists</a><h1>Shared shopping lists</h1>
+        <h3>Statistics</h3>
     <ul>
+    <% if (it.shoppingLists > 0) { %>
+    
     <li>Shopping lists: <%= it.shoppingLists %></li>
     <li>Shopping list items: <%= it.shoppingListItems %></li>
-    </ul>
-    
-    
     
     <% } else { %>
     <p>No shopping lists yet.</p>
     <% } %>
+    
+    </ul
 
+    </div>
+  </body>
+</html>
 
  
