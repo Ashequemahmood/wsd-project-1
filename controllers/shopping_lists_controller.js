@@ -31,8 +31,6 @@ const deactivateLists = async (request) => {
 
 const mainPage = async (request) => {
     const data = {
-      title: "Shared shopping lists",
-      heading: "Shared shopping lists",
       shoppingLists: await shopping_lists_service.countShoppingLists(),
       shoppingListItems: await shopping_lists_service.countShoppingListsItems()
     };
