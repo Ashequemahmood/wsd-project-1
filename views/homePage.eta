@@ -1,4 +1,4 @@
-
+<% layout("./layouts/layout.eta") %>
 <% /* <%~ includeFile("./partials/menu.eta") %> */ %>
 <a href= "/lists">lists</a>
 <% /* <h1><%= it.heading %></h1> */ %>
