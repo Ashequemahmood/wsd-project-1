@@ -2,7 +2,7 @@
 <%~ includeFile("./partials/menu.eta") %>
 <h1><%= it.heading %></h1>
 <h3>Statistics</h3>
-<ul>
+<% /* <ul>
     <% if(it.shoppingLists && it.shoppingLists > 0) { %>
         <li>Shopping lists: <%= it.shoppingLists %></li>
     <% } else { %> 
@@ -14,17 +14,17 @@
     <% } else { %>
         <p>No shopping lists yet.</p>
     <% } %>
-</ul>
+</ul> */ %>
 
 
-    <% /* <% if (it.shoppingLists > 0) { %>
+    <% if (it.shoppingLists && it.shoppingLists > 0) { %>
     <ul>
     <li>Shopping lists: <%= it.shoppingLists %></li>
     <li>Shopping list items: <%= it.shoppingListItems %></li>
     </ul>
     <% } else { %>
     <p>No shopping lists yet.</p>
-    <% } %> */ %>
+    <% } %>
 
 
  
