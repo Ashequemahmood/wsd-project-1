@@ -1,6 +1,8 @@
 
-<%~ includeFile("./partials/menu.eta") %>
-<h1><%= it.heading %></h1>
+<% /* <%~ includeFile("./partials/menu.eta") %> */ %>
+<a href= "/lists">lists</a>
+<% /* <h1><%= it.heading %></h1> */ %>
+<h1>Shared shopping lists</h1>
 <h3>Statistics</h3>
 
 
