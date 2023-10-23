@@ -1,0 +1,32 @@
+<% layout("./layouts/layout.eta") %>
+<%~ includeFile("./partials/menu.eta") %>
+<h1><%= it.heading %></h1>
+<h3>Statistics</h3>
+<ul>
+    <% if(it.shoppingLists && it.shoppingLists > 0) { %>
+        <li>Shopping lists: <%= it.shoppingLists %></li>
+    <% } else { %> 
+        <p>No shopping lists yet.</p>
+    <% } %>
+
+    <% if(it.shoppingListItems && it.shoppingListItems > 0) { %>
+        <li>Shopping list items: <%= it.shoppingListItems %> </li>
+    <% } else { %>
+        <p>No shopping lists yet.</p>
+    <% } %>
+</ul>
+
+<% /* <li>Shopping lists: <%= it.shoppingLists %></li>
+<li>Shopping list items: <%= it.shoppingListItems %> </li> */ %>
+
+    <% /* <% if (it.shoppingLists > 0) { %>
+    <ul>
+    <li>Shopping lists: <%= it.shoppingLists %></li>
+    <li>Shopping list items: <%= it.shoppingListItems %></li>
+    </ul>
+    <% } else { %>
+    <p>No shopping lists yet.</p>
+    <% } %> */ %>
+
+
+ 
