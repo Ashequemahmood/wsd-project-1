@@ -16,8 +16,6 @@
     <% } %>
 </ul>
 
-<% /* <li>Shopping lists: <%= it.shoppingLists %></li>
-<li>Shopping list items: <%= it.shoppingListItems %> </li> */ %>
 
     <% /* <% if (it.shoppingLists > 0) { %>
     <ul>
