@@ -17,13 +17,14 @@
 </ul> */ %>
 
 
-    <% if (it.shoppingLists && it.shoppingLists > 0) { %>
+    <% if (!it.shoppingLists && it.shoppingLists > 0) { %>
     <ul>
-    <li>Shopping lists: <%= it.shoppingLists %></li>
-    <li>Shopping list items: <%= it.shoppingListItems %></li>
+    <p>No shopping lists yet.</p>
+    
     </ul>
     <% } else { %>
-    <p>No shopping lists yet.</p>
+    <li>Shopping lists: <%= it.shoppingLists %></li>
+    <li>Shopping list items: <%= it.shoppingListItems %></li>
     <% } %>
 
 
