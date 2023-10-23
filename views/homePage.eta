@@ -1,4 +1,4 @@
-<% layout("./layouts/layout.eta") %>
+
 <%~ includeFile("./partials/menu.eta") %>
 <h1><%= it.heading %></h1>
 <h3>Statistics</h3>
