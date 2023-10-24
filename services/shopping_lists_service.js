@@ -26,19 +26,13 @@ const findById = async (id) => {
 };
 
 const countShoppingLists = async () => {
-  const rows = await sql`SELECT COUNT(*) from shopping_lists`;
-  console.log(rows.count)
+  const rows = await sql`SELECT COUNT(*) AS count from shopping_lists`;
   return rows[0].count;
-  
-  
 }
 
 const countShoppingListsItems = async () => {
-  const rows = await sql`SELECT COUNT(*) from shopping_list_items`;
-  
+  const rows = await sql`SELECT COUNT(*) AS count from shopping_list_items`;
   return rows[0].count;
-  
-  
 }
 
 export { countShoppingLists, countShoppingListsItems, create, deactivateById, findAllActiveShopping_lists, findById };

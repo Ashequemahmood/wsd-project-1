@@ -34,6 +34,7 @@ const mainPage = async (request) => {
       shoppingLists: await shopping_lists_service.countShoppingLists(),
       shoppingListItems: await shopping_lists_service.countShoppingListsItems()
     };
+    console.log(data)
     return new Response(await renderFile("homePage.eta", data), responseDetails);
   }
 
