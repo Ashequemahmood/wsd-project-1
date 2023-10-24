@@ -12,13 +12,13 @@
         <a href="/lists">Lists</a><h1>Shared shopping lists</h1>
         <h3>Statistics</h3>
     <ul>
-    <% if (it.shoppingLists > 0) { %>
+    <% if (parseInt(it.shoppingLists) === 0) { %>
     
+    
+    <p>No shopping lists yet.</p>
+    <% } else { %>
     <li>Shopping lists: <%= it.shoppingLists %></li>
     <li>Shopping list items: <%= it.shoppingListItems %></li>
-    
-    <% } else { %>
-    <p>No shopping lists yet.</p>
     <% } %>
     
     </ul
