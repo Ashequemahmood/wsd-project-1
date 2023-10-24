@@ -1,11 +1,15 @@
     <% layout("./layout/layout.eta") %>
-    <% if (parseInt(it.shoppingLists) > 0) { %>
+    <a href="/lists">Lists</a>
     
-    <li>Shopping lists: <%= it.shoppingLists %></li>
-    <li>Shopping list items: <%= it.shoppingListItems %></li>
-    
-    <% } else { %>
-    <p>No shopping lists yet.</p>
-    <% } %>
-    
+    <h1>Shared shopping lists</h1>
+    <h3>Statetics</h3>
+
+<% if (it.shoppingLists > 0) { %>
+ <ul>
+ <li>Shopping lists: <%= it.shoppingLists %></li>
+ <li>Shopping list items: <%= it.shoppingListItems %></li>
+ </ul>
+<% } else { %>
+ <p>No shopping lists yet.</p>
+<% } %>
  

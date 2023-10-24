@@ -9,12 +9,7 @@
   </head>
   <body>
     <div class="container paper">
-        <a href="/lists">Lists</a><h1>Shared shopping lists</h1>
-        <h3>Statistics</h3>
-    <ul>
         <%~ it.body %>
-    </ul
-
     </div>
   </body>
 </html>
